@@ -12,6 +12,24 @@
 		623B541C29B343E400F1939D /* Netflix_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 623B541A29B343E400F1939D /* Netflix_Clone.xcdatamodeld */; };
 		623B541E29B343E500F1939D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623B541D29B343E500F1939D /* Assets.xcassets */; };
 		623B542129B343E500F1939D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623B541F29B343E500F1939D /* LaunchScreen.storyboard */; };
+		623B542D29B347DC00F1939D /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B542C29B347DC00F1939D /* AnimationVC.swift */; };
+		623B543029B3486800F1939D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 623B542F29B3486800F1939D /* Lottie */; };
+		623B543329B3489A00F1939D /* netflix.json in Resources */ = {isa = PBXBuildFile; fileRef = 623B543229B3489A00F1939D /* netflix.json */; };
+		623B543629B3499900F1939D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 623B543529B3499900F1939D /* SnapKit */; };
+		623B543929B34B5C00F1939D /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B543829B34B5C00F1939D /* Presentation.swift */; };
+		623B543C29B34B7900F1939D /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 623B543B29B34B7900F1939D /* Hero */; };
+		623B543E29B34BB800F1939D /* Onboarding1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B543D29B34BB800F1939D /* Onboarding1VC.swift */; };
+		623B544029B34FF800F1939D /* ScreenW-H.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B543F29B34FF800F1939D /* ScreenW-H.swift */; };
+		623B544829B3570E00F1939D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B544729B3570E00F1939D /* Fonts.swift */; };
+		623B544929B3579600F1939D /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623B544429B3567F00F1939D /* Inter-Regular.ttf */; };
+		623B544A29B3579600F1939D /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623B544629B3567F00F1939D /* Inter-SemiBold.ttf */; };
+		623B544B29B3579600F1939D /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623B544529B3567F00F1939D /* Inter-Bold.ttf */; };
+		623B544C29B3579600F1939D /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623B544229B3567E00F1939D /* Inter-Light.ttf */; };
+		623B544D29B3579600F1939D /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623B544329B3567E00F1939D /* Inter-Medium.ttf */; };
+		623B544F29B35EEC00F1939D /* Onboarding2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B544E29B35EEC00F1939D /* Onboarding2VC.swift */; };
+		623B545129B361F200F1939D /* Onboarding3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545029B361F200F1939D /* Onboarding3VC.swift */; };
+		623B545329B3626200F1939D /* Onboarding4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545229B3626200F1939D /* Onboarding4VC.swift */; };
+		623B545729B3665200F1939D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545629B3665200F1939D /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +40,21 @@
 		623B541D29B343E500F1939D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		623B542029B343E500F1939D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623B542229B343E500F1939D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623B542C29B347DC00F1939D /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
+		623B543229B3489A00F1939D /* netflix.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = netflix.json; sourceTree = "<group>"; };
+		623B543829B34B5C00F1939D /* Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		623B543D29B34BB800F1939D /* Onboarding1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1VC.swift; sourceTree = "<group>"; };
+		623B543F29B34FF800F1939D /* ScreenW-H.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScreenW-H.swift"; sourceTree = "<group>"; };
+		623B544229B3567E00F1939D /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		623B544329B3567E00F1939D /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		623B544429B3567F00F1939D /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		623B544529B3567F00F1939D /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		623B544629B3567F00F1939D /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		623B544729B3570E00F1939D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		623B544E29B35EEC00F1939D /* Onboarding2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2VC.swift; sourceTree = "<group>"; };
+		623B545029B361F200F1939D /* Onboarding3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3VC.swift; sourceTree = "<group>"; };
+		623B545229B3626200F1939D /* Onboarding4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4VC.swift; sourceTree = "<group>"; };
+		623B545629B3665200F1939D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623B543029B3486800F1939D /* Lottie in Frameworks */,
+				623B543C29B34B7900F1939D /* Hero in Frameworks */,
+				623B543629B3499900F1939D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +90,85 @@
 		623B541029B343E400F1939D /* Netflix_Clone */ = {
 			isa = PBXGroup;
 			children = (
-				623B541129B343E400F1939D /* AppDelegate.swift */,
-				623B541329B343E400F1939D /* SceneDelegate.swift */,
-				623B541D29B343E500F1939D /* Assets.xcassets */,
-				623B541F29B343E500F1939D /* LaunchScreen.storyboard */,
+				623B542B29B3476C00F1939D /* Support */,
+				623B543729B34B4D00F1939D /* Constants */,
+				623B542A29B3475D00F1939D /* Scane */,
+				623B543129B3487200F1939D /* Resources */,
 				623B542229B343E500F1939D /* Info.plist */,
 				623B541A29B343E400F1939D /* Netflix_Clone.xcdatamodeld */,
 			);
 			path = Netflix_Clone;
+			sourceTree = "<group>";
+		};
+		623B542A29B3475D00F1939D /* Scane */ = {
+			isa = PBXGroup;
+			children = (
+				623B545429B3660500F1939D /* Onboardings */,
+				623B545529B3662E00F1939D /* Login */,
+				623B542C29B347DC00F1939D /* AnimationVC.swift */,
+			);
+			path = Scane;
+			sourceTree = "<group>";
+		};
+		623B542B29B3476C00F1939D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				623B541129B343E400F1939D /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		623B543129B3487200F1939D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				623B544129B3566700F1939D /* Fonts */,
+				623B543229B3489A00F1939D /* netflix.json */,
+				623B541F29B343E500F1939D /* LaunchScreen.storyboard */,
+				623B541329B343E400F1939D /* SceneDelegate.swift */,
+				623B541D29B343E500F1939D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		623B543729B34B4D00F1939D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				623B543829B34B5C00F1939D /* Presentation.swift */,
+				623B543F29B34FF800F1939D /* ScreenW-H.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		623B544129B3566700F1939D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				623B544529B3567F00F1939D /* Inter-Bold.ttf */,
+				623B544229B3567E00F1939D /* Inter-Light.ttf */,
+				623B544329B3567E00F1939D /* Inter-Medium.ttf */,
+				623B544429B3567F00F1939D /* Inter-Regular.ttf */,
+				623B544629B3567F00F1939D /* Inter-SemiBold.ttf */,
+				623B544729B3570E00F1939D /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		623B545429B3660500F1939D /* Onboardings */ = {
+			isa = PBXGroup;
+			children = (
+				623B543D29B34BB800F1939D /* Onboarding1VC.swift */,
+				623B544E29B35EEC00F1939D /* Onboarding2VC.swift */,
+				623B545029B361F200F1939D /* Onboarding3VC.swift */,
+				623B545229B3626200F1939D /* Onboarding4VC.swift */,
+			);
+			path = Onboardings;
+			sourceTree = "<group>";
+		};
+		623B545529B3662E00F1939D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				623B545629B3665200F1939D /* LoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +187,11 @@
 			dependencies = (
 			);
 			name = Netflix_Clone;
+			packageProductDependencies = (
+				623B542F29B3486800F1939D /* Lottie */,
+				623B543529B3499900F1939D /* SnapKit */,
+				623B543B29B34B7900F1939D /* Hero */,
+			);
 			productName = Netflix_Clone;
 			productReference = 623B540E29B343E400F1939D /* Netflix_Clone.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +220,11 @@
 				Base,
 			);
 			mainGroup = 623B540529B343E400F1939D;
+			packageReferences = (
+				623B542E29B3486800F1939D /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				623B543429B3499900F1939D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				623B543A29B34B7900F1939D /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 623B540F29B343E400F1939D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,8 +239,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623B544B29B3579600F1939D /* Inter-Bold.ttf in Resources */,
+				623B543329B3489A00F1939D /* netflix.json in Resources */,
 				623B542129B343E500F1939D /* LaunchScreen.storyboard in Resources */,
+				623B544929B3579600F1939D /* Inter-Regular.ttf in Resources */,
+				623B544D29B3579600F1939D /* Inter-Medium.ttf in Resources */,
+				623B544A29B3579600F1939D /* Inter-SemiBold.ttf in Resources */,
 				623B541E29B343E500F1939D /* Assets.xcassets in Resources */,
+				623B544C29B3579600F1939D /* Inter-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623B544829B3570E00F1939D /* Fonts.swift in Sources */,
 				623B541C29B343E400F1939D /* Netflix_Clone.xcdatamodeld in Sources */,
+				623B545729B3665200F1939D /* LoginVC.swift in Sources */,
+				623B543E29B34BB800F1939D /* Onboarding1VC.swift in Sources */,
+				623B545129B361F200F1939D /* Onboarding3VC.swift in Sources */,
 				623B541229B343E400F1939D /* AppDelegate.swift in Sources */,
+				623B544F29B35EEC00F1939D /* Onboarding2VC.swift in Sources */,
+				623B544029B34FF800F1939D /* ScreenW-H.swift in Sources */,
+				623B542D29B347DC00F1939D /* AnimationVC.swift in Sources */,
+				623B545329B3626200F1939D /* Onboarding4VC.swift in Sources */,
+				623B543929B34B5C00F1939D /* Presentation.swift in Sources */,
 				623B541429B343E400F1939D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +478,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		623B542E29B3486800F1939D /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		623B543429B3499900F1939D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		623B543A29B34B7900F1939D /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		623B542F29B3486800F1939D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 623B542E29B3486800F1939D /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		623B543529B3499900F1939D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 623B543429B3499900F1939D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		623B543B29B34B7900F1939D /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 623B543A29B34B7900F1939D /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		623B541A29B343E400F1939D /* Netflix_Clone.xcdatamodeld */ = {
