@@ -59,7 +59,7 @@ class LoginVC: UIViewController {
         }
         
         lazy var passwordTextField = UITextField()
-        passwordTextField.backgroundColor = .darkGray
+        passwordTextField.backgroundColor = UIColor(named: "textFieldColor")
         passwordTextField.placeholder = "Enter New Password"
         passwordTextField.textColor = UIColor(red: 0.658, green: 0.658, blue: 0.658, alpha: 1)
         passwordTextField.layer.cornerRadius = 10
@@ -82,6 +82,7 @@ class LoginVC: UIViewController {
         loginButton.layer.cornerRadius = 10
         loginButton.titleLabel?.font = Font.custom(size: 16,fontWeight: .semibold)
         loginButton.layer.borderColor = UIColor.black.cgColor
+        loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         view.addSubview(loginButton)
         
         loginButton.snp.makeConstraints { make in
@@ -91,13 +92,25 @@ class LoginVC: UIViewController {
             make.height.equalTo(0.055 * screenHeight)
         }
         
+        lazy var recoverBtn = UIButton()
+        recoverBtn.setTitle("Recover Password", for: .normal)
+        recoverBtn.backgroundColor = .clear
+        recoverBtn.titleLabel?.font = Font.custom(size: 16,fontWeight: .semibold)
+        view.addSubview(recoverBtn)
         
-        
-        
-        
-        
-        
-        
+        recoverBtn.snp.makeConstraints { make in
+            make.top.equalTo(loginButton.snp.bottom).offset(0.03 * screenHeight)
+            make.width.equalTo(0.8 * screenWidth)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(0.055 * screenHeight)
+        }
+    }
+    
+    @objc func didTapLogin() {
+        Presentation.presentVC(currentVC: self, destinationVC: HomeVC(), toDirection: .up)
+    }
+    
+    @objc func didTapRecover() {
         
     }
     

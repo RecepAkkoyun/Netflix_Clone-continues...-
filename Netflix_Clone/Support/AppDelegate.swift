@@ -16,7 +16,7 @@ var window: UIWindow?
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: LoginVC())
+        window?.rootViewController = UINavigationController(rootViewController: AnimationVC())
         
         return true
     }

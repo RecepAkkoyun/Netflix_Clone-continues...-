@@ -30,6 +30,7 @@
 		623B545129B361F200F1939D /* Onboarding3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545029B361F200F1939D /* Onboarding3VC.swift */; };
 		623B545329B3626200F1939D /* Onboarding4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545229B3626200F1939D /* Onboarding4VC.swift */; };
 		623B545729B3665200F1939D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B545629B3665200F1939D /* LoginVC.swift */; };
+		6274682A29B3DEBF00BFB69F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274682929B3DEBF00BFB69F /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		623B545029B361F200F1939D /* Onboarding3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3VC.swift; sourceTree = "<group>"; };
 		623B545229B3626200F1939D /* Onboarding4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4VC.swift; sourceTree = "<group>"; };
 		623B545629B3665200F1939D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6274682929B3DEBF00BFB69F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		623B542A29B3475D00F1939D /* Scane */ = {
 			isa = PBXGroup;
 			children = (
+				6274682829B3DEA600BFB69F /* Home */,
 				623B545429B3660500F1939D /* Onboardings */,
 				623B545529B3662E00F1939D /* Login */,
 				623B542C29B347DC00F1939D /* AnimationVC.swift */,
@@ -169,6 +172,14 @@
 				623B545629B3665200F1939D /* LoginVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		6274682829B3DEA600BFB69F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6274682929B3DEBF00BFB69F /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				623B541C29B343E400F1939D /* Netflix_Clone.xcdatamodeld in Sources */,
 				623B545729B3665200F1939D /* LoginVC.swift in Sources */,
 				623B543E29B34BB800F1939D /* Onboarding1VC.swift in Sources */,
+				6274682A29B3DEBF00BFB69F /* HomeVC.swift in Sources */,
 				623B545129B361F200F1939D /* Onboarding3VC.swift in Sources */,
 				623B541229B343E400F1939D /* AppDelegate.swift in Sources */,
 				623B544F29B35EEC00F1939D /* Onboarding2VC.swift in Sources */,
