@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
     }
 
     func setupUI() {
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .red
     }
 
 }

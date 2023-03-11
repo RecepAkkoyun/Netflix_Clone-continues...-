@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,9 @@ var window: UIWindow?
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: AnimationVC())
+        window?.rootViewController = UINavigationController(rootViewController: LoginVC())
         
+        FirebaseApp.configure()
         return true
     }
 

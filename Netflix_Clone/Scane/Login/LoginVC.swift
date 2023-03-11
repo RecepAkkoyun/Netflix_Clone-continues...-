@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController,UITextFieldDelegate {
+    
+    lazy var gmailTextField = UITextField()
+    lazy var passwordTextField = UITextField()
+    lazy var loginButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        textControl()
+        
+        passwordTextField.delegate = self
+        gmailTextField.delegate = self
     }
 
     func setupUI() {
@@ -39,7 +48,7 @@ class LoginVC: UIViewController {
             make.right.equalToSuperview().offset(-24)
         }
         
-        lazy var gmailTextField = UITextField()
+        
         gmailTextField.backgroundColor = UIColor(named: "textFieldColor")
         gmailTextField.layer.cornerRadius = 10
         gmailTextField.placeholder = "Enter Email or Contact Number"
@@ -58,7 +67,7 @@ class LoginVC: UIViewController {
             make.height.equalTo(0.055 * screenHeight)
         }
         
-        lazy var passwordTextField = UITextField()
+        
         passwordTextField.backgroundColor = UIColor(named: "textFieldColor")
         passwordTextField.placeholder = "Enter New Password"
         passwordTextField.textColor = UIColor(red: 0.658, green: 0.658, blue: 0.658, alpha: 1)
@@ -75,7 +84,7 @@ class LoginVC: UIViewController {
             make.height.equalTo(0.055 * screenHeight)
         }
         
-        lazy var loginButton = UIButton()
+       
         loginButton.setTitle("Login", for: .normal)
         loginButton.backgroundColor = .clear
         loginButton.layer.borderWidth = 2
@@ -107,11 +116,62 @@ class LoginVC: UIViewController {
     }
     
     @objc func didTapLogin() {
-        Presentation.presentVC(currentVC: self, destinationVC: HomeVC(), toDirection: .up)
+       
+        if gmailTextField.text != "" && passwordTextField.text != "" {
+            Auth.auth().createUser(withEmail: gmailTextField.text!, password: passwordTextField.text!) { authdata, error in
+                if error != nil {
+                    self.alertMeesage(title: "Warning!", message: error!.localizedDescription)
+                }
+                else{
+                    Presentation.presentVC(currentVC: self, destinationVC: HomeVC(), toDirection: .up)
+                }
+            }
+        }
+        else {
+            print("error")
+            alertMeesage(title: "Warning!", message: "Email or password is incorrect")
+        }
     }
     
     @objc func didTapRecover() {
+       
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text == "" {
+            // Eğer textfield boş ise, butonu siyah yap
+            loginButton.backgroundColor = UIColor.black
+        } else {
+            // Eğer textfield dolu ise, butonu kırmızı yap
+            loginButton.backgroundColor = UIColor.red
+        }
+    }
+
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField.text == "" {
+            // Eğer textfield boş ise, butonu siyah yap
+            loginButton.backgroundColor = UIColor.black
+        } else {
+            // Eğer textfield dolu ise, butonu kırmızı yap
+            loginButton.backgroundColor = UIColor.red
+        }
+    }
+    
+    func textControl() {
+        if gmailTextField.text != "" && passwordTextField.text != "" {
+            loginButton.backgroundColor = .red
+        }
+        else{
+            loginButton.backgroundColor = .clear
+        }
+    }
+    
+    func alertMeesage(title: String, message: String) {
         
+        let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default,handler: nil)
+        alertMessage.addAction(okButton)
+        self.present(alertMessage, animated: true)
     }
     
 }
